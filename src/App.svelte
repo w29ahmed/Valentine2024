@@ -50,12 +50,12 @@
 
       <!-- Bottom Row: Buttons -->
       <!-- Full width of the parents -->
-      <div class="grid grid-cols-2 w-full p">
+      <div class="grid grid-cols-2 w-full py-2">
         <div class="flex items-center justify-center">
-          <button class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700 transition">Yes</button>
+          <button class="px-8 py-1 bg-red-500 text-white text-2xl rounded-lg hover:bg-red-700 transition">Yes</button>
         </div>
         <div class="flex items-center justify-center">
-          <button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700 transition">No</button>
+          <button class="px-8 py-1 bg-gray-500 text-white text-2xl rounded-lg hover:bg-gray-700 transition">No</button>
         </div>
       </div>
 
