@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .theme-transition {
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-} */
-
 /* Global transitions for theme change */
 :root {
   --transition-duration: 250ms;

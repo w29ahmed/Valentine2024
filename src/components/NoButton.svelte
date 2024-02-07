@@ -49,6 +49,7 @@
   button {
     /* Animate translations */
     transition: transform 0.5s ease;
+    font-family: 'Pangolin', cursive;
   }
 </style>
 

@@ -2,8 +2,8 @@
   import { onMount } from "svelte";
   import ThemeToggleSwitch from "./components/ThemeToggleSwitch.svelte";
   import NoButton from "./components/NoButton.svelte";
-  import walle_eve_image from "./assets/walle_eve_no_bg_heart.png";
-  // import walle_eve_image from "./assets/walle_eve.jpg";
+  import walle_eve_image from "/assets/walle_eve_no_bg_heart.png";
+  // import walle_eve_image from "/assets/walle_eve.jpg";
 
   import "./app.css";
 
