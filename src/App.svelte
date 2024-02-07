@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import ThemeToggleSwitch from "./components/ThemeToggleSwitch.svelte";
+  import NoButton from "./components/NoButton.svelte";
   import walle_eve_image from "./assets/walle_eve_no_bg_heart.png";
   // import walle_eve_image from "./assets/walle_eve.jpg";
 
@@ -16,44 +17,6 @@
     document.documentElement.classList.toggle("dark", isDarkTheme);
   }
 
-  let totalX = 0;
-  let totalY = 0;
-
-  function moveButton(event) {
-    const button = event.target;
-    const rect = button.getBoundingClientRect();
-
-    // Current position
-    const currentX = rect.x;
-    const currentY = rect.y;
-
-    // Viewport dimensions and button dimensions
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-    const buttonWidth = button.offsetWidth;
-    const buttonHeight = button.offsetHeight;
-
-    // Calculate max position in pixels
-    const maxX = viewportWidth - buttonWidth;
-    const maxY = viewportHeight - buttonHeight;
-
-    // Generate random position
-    const newX = Math.floor(Math.random() * maxX);
-    const newY = Math.floor(Math.random() * maxY);
-
-
-    // Calculate difference
-    const diffX = newX - currentX;
-    const diffY = newY - currentY;
-
-    // Update total translations
-    totalX += diffX;
-    totalY += diffY;
-
-    // Translate
-    button.style.transform = `translate(${totalX}px, ${totalY}px)`;
-  }
-
   onMount(() => {
     // Apply the initial theme to the document
     document.documentElement.classList.toggle("dark", isDarkTheme);
@@ -63,10 +26,6 @@
 <style>
   p, button {
     font-family: 'Pangolin', cursive;
-  }
-
-  .no-button {
-    transition: transform 0.5s ease;
   }
 </style>
 
@@ -99,7 +58,7 @@
         </div>
         <!-- No Button -->
         <div class="flex items-center justify-center">
-          <button on:click={moveButton} class="no-button px-8 py-1 bg-gray-500 text-white text-2xl rounded-lg hover:bg-gray-700 transition">No</button>
+          <NoButton/>
         </div>
       </div>
 

@@ -1,3 +1,9 @@
+<!--
+  A theme toggle to switch between light and dark mode. Parent component should provide an initial
+  value for isDarkTheme and then create a 2 way binding on it to ensure it sees when the value changes.
+  Up to the parent component to figure out how to handle applying different styles based on the theme.
+-->
+
 <script lang="ts">
   import Fa from "svelte-fa";
   import { faMoon } from "@fortawesome/free-solid-svg-icons";
