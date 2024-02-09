@@ -3,13 +3,8 @@
   import { fade } from 'svelte/transition';
   import ThemeToggleSwitch from "./components/ThemeToggleSwitch.svelte";
   import NoButton from "./components/NoButton.svelte";
-  // import walle_eve_image from "/assets/walle_eve_no_bg_heart.png";
-  import walle_eve_image from "/assets/be_mine.png";
-
-  // import walle_eve_image from "/assets/walle_eve.jpg";
-  // import yes_image from "/assets/she_said_yes.png"
-  import yes_image from "/assets/she_said_yes_no_bg.png"
-
+  import be_mine_image from "/assets/be_mine.png";
+  import yes_image from "/assets/she_said_yes.png";
   import "./app.css";
 
   // Directly initialize isDarkTheme based on localStorage or default to light theme
@@ -66,7 +61,7 @@
         <!-- width auto for the container to fit the content -->
         <div class="w-auto">
           <!-- max height to ensure image is not too big -->
-          <img src={walle_eve_image} alt="Valentine's Image" class="w-full">
+          <img src={be_mine_image} alt="Valentine's Image" class="w-full">
         </div>
 
         <!-- Middle Row: Text -->
