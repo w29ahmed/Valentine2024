@@ -40,7 +40,7 @@
   }
 </style>
 
-<body class="bg-red-300 dark:bg-gray-900">
+<body class="bg-red-300 dark:bg-indigo-950">
   <ThemeToggleSwitch bind:isDarkTheme />
 
   <div class="flex flex-col items-center justify-center min-h-screen px-4">
@@ -72,7 +72,7 @@
         <!-- Middle Row: Text -->
         <!-- Full width of the parent -->
         <div class="w-full text-center">
-          <p class="text-4xl text-gray-900 dark:text-gray-200 my-4">Will you be my Valentine?</p>
+          <p class="text-3xl md:text-4xl text-gray-900 dark:text-gray-200 my-4">Will you be my Valentine?</p>
         </div>
 
         <!-- Bottom Row: Buttons -->
@@ -80,7 +80,7 @@
         <div class="grid grid-cols-2 w-full py-2">
           <!-- Yes Button -->
           <div class="flex items-center justify-center">
-            <button on:click={yesClicked} class="px-8 py-1 bg-red-500 text-white text-2xl rounded-lg hover:bg-red-700 transition">Yes</button>
+            <button on:click={yesClicked} class="px-8 py-1 bg-red-500 text-white text-xl md:text-2xl rounded-lg hover:bg-red-700 transition">Yes</button>
           </div>
           <!-- No Button -->
           <div class="flex items-center justify-center">

@@ -55,6 +55,6 @@
 
 <button
   on:click={moveButton}
-  class="px-8 py-1 bg-gray-500 text-white text-2xl rounded-lg hover:bg-gray-700 transition">
+  class="px-8 py-1 bg-gray-500 text-white text-xl md:text-2xl rounded-lg hover:bg-gray-700 transition">
   No
 </button>
