@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { fade } from 'svelte/transition';
   import ThemeToggleSwitch from "./components/ThemeToggleSwitch.svelte";
   import NoButton from "./components/NoButton.svelte";
   // import walle_eve_image from "/assets/walle_eve_no_bg_heart.png";
@@ -50,14 +51,14 @@
       {#if yes_button_clicked}
         <!-- Top Row: Image -->
         <!-- width auto for the container to fit the content -->
-        <div class="w-auto">
+        <div class="w-auto" transition:fade={{ duration: 300 }}>
           <!-- max height to ensure image is not too big -->
           <img src={yes_image} alt="Valentine's Image" class="w-full">
         </div>
 
         <!-- Bottom Row: Text -->
         <!-- Full width of the parent -->
-        <div class="w-full text-center">
+        <div class="w-full text-center" transition:fade={{ duration: 300 }}>
           <p class="text-4xl text-gray-900 dark:text-gray-200 my-4">Yay!</p>
         </div>
       {:else}
