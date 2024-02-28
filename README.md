@@ -1,7 +1,7 @@
 # Valentine2024
 A website to ask somebody to be your Valentine. The catch is, they can't say no!
 
-![Demo](./assets/demo.gif)
+![Demo](./assets/demo2.gif)
 
 ### Built with
 * [Svelte](https://svelte.dev): A modern JavaScript framework for building fast, reactive web interfaces
