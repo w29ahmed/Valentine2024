@@ -21,5 +21,5 @@ npm run dev
 ### Deploy
 ```
 npm run build
-npm deploy
+npm run deploy
 ```
