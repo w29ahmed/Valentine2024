@@ -2,7 +2,7 @@
 A website to ask somebody to be your Valentine. The catch is, they can't say no! Try it [here](https://w29ahmed.github.io/Valentine2024).
 
 <div align="center">
-  <img src="./assets/demo2.gif" alt="demo">
+  <img src="./assets/demo.gif" alt="demo">
 </div>
 
 ### Built with
