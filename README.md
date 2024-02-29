@@ -12,7 +12,7 @@ A website to ask somebody to be your Valentine. The catch is, they can't say no!
 * Hosted with [GitHub Pages](https://pages.github.com)
 
 ### Development
-You'll need to have [Node.js](https://nodejs.org/en) installed, as it comes with node package manager (npm).
+You'll need to have [Node.js](https://nodejs.org/en) installed, as it comes with node package manager (npm). For best results, use the same node version specified in [.nvmrc](.nvmrc). (`20.10.0`)
 ```
 npm install
 npm run dev
