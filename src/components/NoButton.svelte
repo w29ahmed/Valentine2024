@@ -45,16 +45,17 @@
   }
 </script>
 
+<button
+  on:click={moveButton}
+  class="px-8 py-1 bg-gray-500 text-white text-xl md:text-2xl rounded-lg hover:bg-gray-700 transition"
+>
+  No
+</button>
+
 <style>
   button {
     /* Animate translations */
     transition: transform 0.5s ease;
-    font-family: 'Pangolin', cursive;
+    font-family: "Pangolin", cursive;
   }
 </style>
-
-<button
-  on:click={moveButton}
-  class="px-8 py-1 bg-gray-500 text-white text-xl md:text-2xl rounded-lg hover:bg-gray-700 transition">
-  No
-</button>
